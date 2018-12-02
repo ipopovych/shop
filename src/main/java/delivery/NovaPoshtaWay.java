@@ -1,0 +1,12 @@
+package delivery;
+
+import articles.Order;
+
+public class NovaPoshtaWay implements DeliveryWay{
+    @Override
+    public boolean process(Order order, String address) {
+        System.out.println("Processing delivery to address: " + address);
+        return true;
+    }
+
+}
